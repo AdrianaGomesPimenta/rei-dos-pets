@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin:0; 
+  } 
+
+  :root{
+    --cor-principal:#28a745;
+    --cor-principal-hover:#218838;
+    --shadow-hover: rgba(40, 167, 69, 0.5);
+    --cor-branco:white;
+    --cor-preta:black ;
+    --hover-nav:#e5f8e5;
+    /* --cinza-hover:#e0e0e0; */
+    --cor-titulo:#444;
+    --cor-texto:#555;
+    --cinza-claro:#f9f9f9;
+    --cor-vermelho:#dc3545;
+    --vermelho-hover:rgba(220, 53, 69, 0.5);
+    --borda-shadow:rgba(0, 0, 0, 0.1);
+    --borda-shadow-hover:rgba(0, 0, 0, 0.2);
+  }
+  
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+  } 
+  
+ /* MENU */
+nav {
+  background-color: var(--cor-principal);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center; /* Centraliza verticalmente a logo e o título */
+  gap: 10px; /* Espaçamento entre a logo e o texto */
+}
+
+.logo-container img {
+  width: 90px;
+  border-radius: 50px;
+  transition: transform 0.3s ease;
+}
+
+.logo-container img:hover {
+  transform: scale(1.1); /* Aumenta levemente o tamanho */
+}
+
+.logo-texto {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--cor-branco) ;
+  font-family: Georgia, serif;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  font-family: 'Roboto', sans-serif;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  color: var(--cor-branco);
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  background-color: var(--hover-nav);
+  color: var(--cor-preta); /* Contraste melhorado */
+}
+
+  /* Estilo geral do footer */
+.site-footer {
+  background-color: var(--cor-principal);
+  color: var(--cor-branco);
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1 1 300px;
+  margin: 10px;
+}
+
+.footer-column h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.footer-column p {
+  margin: 5px 0;
+}
+
+/* Ícones sociais */
+.social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s;
+}
+
+.social-icons a:hover img {
+  transform: scale(1.2);
+}
+
+/* Copyright */
+.footer-copyright {
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  nav {
+      flex-direction: column; /* Empilha logo/título e menu */
+      align-items: flex-start; /* Alinha ao lado esquerdo */
+  }
+  
+  .logo-container {
+      margin-bottom: 10px; /* Espaço entre logo e menu */
+  }
+
+  nav ul li {
+      margin-left: 0; /* Remove margem lateral */
+      margin-bottom: 10px; /* Adiciona espaçamento entre links */
+  }
+}
+
+

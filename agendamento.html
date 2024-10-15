@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta</title>
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/agendamento.css">
+   
+    
+</head>
+
+<body>
+
+     <!-- MENU  -->
+    <header>
+      <nav aria-label="Menu de Navegação">
+        <div class="logo-container">
+          <img src="./assets/logo_rei_pets.webp" alt="Logo do Rei dos Pets" width="90px">
+          <h1 class="logo-texto">REI DOS PETS</h1>
+        </div> 
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="agendamento.html">AGENDAMENTO</a></li>   
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="container">
+          <div class="form">
+              <form id="frmAgendamento" action="#" method="post">
+                  <div class="form-header">
+                      <h1>Agendamento</h1>
+                  </div>
+  
+                  <div class="input-group">
+                      <div class="input-box">
+                          <label for="tutor-nome">Nome do Tutor</label>
+                          <input id="tutor-nome" type="text" name="tutor_nome" 
+                                 placeholder="Digite seu nome" required aria-required="true">
+                      </div>
+  
+                      <div class="input-box">
+                          <label for="pet-nome">Nome do Pet</label>
+                          <input id="pet-nome" type="text" name="pet_nome" 
+                                 placeholder="Digite o nome do Pet" required aria-required="true">
+                      </div>
+  
+                      <div class="input-box">
+                          <label for="telefone">Telefone</label>
+                          <input id="telefone" type="tel" name="telefone" 
+                                 placeholder="(xx) xxxxx-xxxx" pattern="\(\d{2}\) \d{5}-\d{4}" 
+                                 required aria-required="true" oninvalid="this.setCustomValidity('Digite o telefone no formato correto')">
+                      </div>
+                  </div>
+  
+                  <fieldset>
+                    <legend>Tipos de Serviços</legend>
+                    <label><input type="checkbox" name="servico" value="banho"> Banho</label>
+                    <label><input type="checkbox" name="servico" value="tosa"> Tosa</label>
+                    <label><input type="checkbox" name="servico" value="consulta"> Consulta</label>
+                  </fieldset>
+                  
+                  <fieldset>
+                    <legend>Veterinários</legend>
+                    <label><input type="radio" name="veterinario" value="Ariadna" required> Ariadna</label>
+                    <label><input type="radio" name="veterinario" value="Manassés" required> Manassés</label>
+                    <label><input type="radio" name="veterinario" value="Petra" required> Petra</label>
+                    <label><input type="radio" name="veterinario" value="Raoni" required> Raoni</label>
+                  </fieldset>
+  
+                  <div class="input-box">
+                      <label for="data-atendimento">Data do Atendimento</label>
+                      <input type="date" id="data-atendimento" name="data_atendimento" required>
+                  </div>
+  
+                  <div class="input-box">
+                      <label for="hora-desejada">Hora Desejada</label>
+                      <input type="time" id="hora-desejada" name="hora_desejada" required>
+                  </div>
+  
+                  <div class="input-box">
+                      <label for="mensagem">Mensagem</label>
+                      <textarea id="mensagem" name="mensagem" rows="5" 
+                                placeholder="Digite uma mensagem (opcional)"></textarea>
+                  </div>
+  
+                  <div class="continue-button">
+                      <button type="submit" id="btnSalvar">Confirmar</button>
+                  </div>
+              </form>
+          </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>Contato</h3>
+          <p>📞 Telefone: (11) 1234-5678</p>
+          <p>📧 Email: contato@hotelparapets.com</p>
+          <p>📍 Endereço: Rua dos Pets, 456, São Paulo - SP</p>
+        </div>
+    
+        <div class="footer-column">
+          <h3>Horário de Atendimento</h3>
+          <p>Segunda a Sexta: 08h - 18h</p>
+          <p>Sábado: 09h - 14h</p>
+          <p>Domingos e Feriados: Fechado</p>
+        </div>
+    
+        <div class="footer-column">
+          <h3>Siga-nos</h3>
+          <div class="social-icons">
+            <a href="#"><img src="./assets/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="./assets/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="./assets/what.png" alt="WhatsApp"></a>
+          </div>
+        </div>
+      </div>
+      <p class="footer-copyright">
+        &copy; 2024 Hotel para Pets. Todos os direitos reservados.
+      </p>
+    </footer>   
+    </body>
+    </html>
+
+
+
+
+
+
+                   
+    
+                    
+    
+                        
+    
+                     
+    
+       
+        
+    
+
+
+
+
+
+
+
+
+
+
+

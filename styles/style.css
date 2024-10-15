@@ -1,0 +1,258 @@
+main {
+  font-family: Georgia, serif;
+}
+
+ /* SOBRE NÓS*/
+ .sobre-nos {
+  background-color: var(--cinza-claro);
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.sobre-nos-titulo{
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--cor-titulo);
+}
+
+.sobre-nos-texto {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--cor-texto);
+  margin-bottom: 15px;
+}
+
+.destaque {
+  font-size: 20px;
+  color: var(--cor-principal);
+  font-weight: bold;
+}
+
+.sobre-nos-container {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* NOSSAS ATIVIDADES */
+.ofertas-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+ .ofertas-titulo {
+  text-align: center;
+  color: var(--cor-titulo);
+  margin-bottom: 20px;
+  font-size: 2rem;
+} 
+
+.ofertas-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f2f8fb;
+  box-shadow: 0 4px 8px var(--borda-shadow);
+}
+
+.ofertas-section:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px var(--borda-shadow-hover);
+}
+
+.container-img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.ofertas-h3 {
+  margin: 10px 0;
+  font-size: 1.5rem;
+  color: var(--cor-titulo);
+}
+
+.ofertas-paragrafo {
+  font-size: 1.2rem;
+  color: var(--cor-texto);
+}
+
+/* NOSSO ESPAÇO  */
+.espaco-container {
+  text-align: center;
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 800px;
+}
+
+.espaco-titulo {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--cor-titulo);; 
+}
+
+.galeria-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.foto-wrapper {
+  text-align: center; 
+}
+
+.foto-galeria {
+  max-width: 300px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.foto-galeria:hover {
+  transform: scale(1.05);
+}
+
+.legenda {
+  font-size: 1.2rem;
+  margin-top: 5px;
+  color: var(--cor-texto);
+}
+
+/* BANHO E TOSA */
+.banho-tosa-container {
+  margin: 50px auto;
+  padding: 30px;
+  max-width: 1000px;
+  background-color: var(--cinza-claro);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px var(--borda-shadow);
+}
+
+.banho-tosa-titulo {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+  color: var(--cor-titulo);;
+  font-weight: bold;
+}
+
+.banho-tosa-conteudo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.texto-banho-tosa {
+  flex: 1;
+  min-width: 280px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--cor-texto);
+}
+
+.imagem-banho-tosa {
+  flex: 1;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.imagem-servico {
+  max-width: 200px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 8px var(--borda-shadow);
+}
+
+.imagem-servico:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px var(--borda-shadow-hover);
+}
+
+/* TABELA DE PREÇO*/
+#precos {
+  margin: 40px auto;
+  max-width: 600px;
+  padding: 20px;
+  background-color: var(--cinza-claro);
+  border-radius: 10px;
+}
+
+.precos-titulo {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--cor-titulo);;
+}
+
+.tabela-precos {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.tabela-precos th, .tabela-precos td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.tabela-precos th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.tabela-precos tr:nth-child(even) {
+  background-color: var(--cinza-claro);
+}
+
+@media (max-width: 768px) {
+  .sobre-nos-titulo,
+  .ofertas-titulo,
+  .espaco-titulo,
+  .banho-tosa-titulo,
+  .precos-titulo{
+    font-size: 1.5rem;
+  }
+  .banho-tosa-container {
+    padding: 15px; /* Reduzimos o padding */
+  }
+  
+  .banho-tosa-conteudo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .texto-banho-tosa {
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 468px) {
+  .banho-tosa-container {
+    padding: 5px; /* Reduzimos o padding */
+  }
+  .imagem-servico {
+    max-width: 150px; /* Reduz o tamanho das imagens */
+  }
+}
